@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return "HELLO HEROKU"
+    return HttpResponse("Hello heroku")
 #     url = "https://app.konfuzio.com/api/projects/103/docs/"
 #     auth = HTTPBasicAuth('xpoda.info@gmail.com','xhensila2501')
 #     response = requests.get(url=url, auth=auth).json()
