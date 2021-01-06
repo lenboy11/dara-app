@@ -19,6 +19,15 @@ def layout(request,document_id):
 
     auth = HTTPBasicAuth('xpoda.info@gmail.com','xhensila2501')
     response = requests.get(url.format(document_id),auth=auth).json()
-    print(response)
-    context = {'document': response}
+    # print(response)
+    context = {'document_id': document_id}
     return render(request,'dashboard/layout.html',context)
+
+# def layout(request,document_id):
+#     url = "https://app.konfuzio.com/api/projects/103/docs/{}/annotations/"
+
+#     auth = HTTPBasicAuth('xpoda.info@gmail.com','xhensila2501')
+#     response = requests.get(url.format(document_id),auth=auth).json()
+#     print(response)
+#     context = {'document': response}
+#     return render(request,'dashboard/layout.html',context)
