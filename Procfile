@@ -1,0 +1,1 @@
+web: gunicorn DARA_APPLICATION.wsgi --log-file -

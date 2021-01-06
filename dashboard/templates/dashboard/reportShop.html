@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Dara - Deep Annual Report Analysis</title>
+    <meta
+      name="description"
+      content="Zapily is a Dashboard & Admin Site Responsive Template by hencework."
+    />
+    <meta
+      name="keywords"
+      content="admin, admin dashboard, admin template, cms, crm, Zapily Admin, Zapilyadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application"
+    />
+    <meta name="author" content="hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS 2.0"
+      href="http://www.datatables.net/rss.xml"
+    />
+
+    <!-- Data table CSS -->
+    <link
+      href="../vendors/bower_components/datatables/media/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../vendors/bower_components/datatables.net-responsive/css/responsive.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Bootstrap table CSS -->
+    <link
+      href="../vendors/bower_components/bootstrap-table/dist/bootstrap-table.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Toast CSS -->
+    <link
+      href="../vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- bootstrap-select CSS -->
+    <link
+      href="../vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Calendar CSS -->
+    <link
+      href="../vendors/bower_components/fullcalendar/dist/fullcalendar.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Bootstrap Dropify CSS -->
+    <link
+      href="../vendors/bower_components/dropify/dist/css/dropify.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader-it">
+      <div class="la-anim-1"></div>
+    </div>
+    <!-- /Preloader -->
+    <div class="wrapper theme-1-active pimary-color-gold">
+      <!-- Top Menu Items -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="mobile-only-brand pull-left">
+          <div class="nav-header pull-left">
+            <div class="logo-wrap">
+              <a href="dashboard.html">
+                <img class="brand-img" src="../img/dara_logo.png" alt="brand" />
+                <span class="brand-text">Dara</span>
+              </a>
+            </div>
+          </div>
+          <a
+            id="toggle_nav_btn"
+            class="toggle-left-nav-btn inline-block ml-20 pull-left"
+            href="javascript:void(0);"
+            ><i class="zmdi zmdi-menu"></i
+          ></a>
+          <a
+            id="toggle_mobile_nav"
+            class="mobile-only-view"
+            href="javascript:void(0);"
+            ><i class="zmdi zmdi-more"></i
+          ></a>
+        </div>
+        <div id="mobile_only_nav" class="mobile-only-nav pull-right">
+          <ul class="nav navbar-right top-nav pull-right">
+            <li class="dropdown full-width-drp">
+              <ul
+                class="dropdown-menu mega-menu pa-0"
+                data-dropdown-in="fadeIn"
+                data-dropdown-out="fadeOut"
+              >
+                <li class="product-nicescroll-bar row"></li>
+              </ul>
+            </li>
+            <li class="dropdown alert-drp">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                ><i class="zmdi zmdi-notifications top-nav-icon"></i
+                ><span class="top-nav-icon-badge">5</span></a
+              >
+              <ul
+                class="dropdown-menu alert-dropdown"
+                data-dropdown-in="bounceIn"
+                data-dropdown-out="bounceOut"
+              >
+                <li>
+                  <div class="notification-box-head-wrap">
+                    <span class="notification-box-head pull-left inline-block"
+                      >notifications</span
+                    >
+                    <a
+                      class="txt-danger pull-right clear-notifications inline-block"
+                      href="javascript:void(0)"
+                    >
+                      clear all
+                    </a>
+                    <div class="clearfix"></div>
+                    <hr class="light-grey-hr ma-0" />
+                  </div>
+                </li>
+                <li>
+                  <div class="streamline message-nicescroll-bar">
+                    <div class="sl-item">
+                      <a href="javascript:void(0)">
+                        <div class="icon bg-green">
+                          <i class="zmdi zmdi-flag"></i>
+                        </div>
+                        <div class="sl-content">
+                          <span
+                            class="inline-block capitalize-font pull-left truncate head-notifications"
+                          >
+                            New Annual Reports</span
+                          >
+                          <span
+                            class="inline-block font-11 pull-right notifications-time"
+                            >2pm</span
+                          >
+                          <div class="clearfix"></div>
+                          <p class="truncate">
+                            Your company has now access to the DAX company
+                            package. This package includes the Top 30 companies
+                            of Germany
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <hr class="light-grey-hr ma-0" />
+                    <div class="sl-item">
+                      <a href="javascript:void(0)">
+                        <div class="icon bg-yellow">
+                          <i class="zmdi zmdi-trending-down"></i>
+                        </div>
+                        <div class="sl-content">
+                          <span
+                            class="inline-block capitalize-font pull-left truncate head-notifications txt-warning"
+                            >Server #2 not responding</span
+                          >
+                          <span
+                            class="inline-block font-11 pull-right notifications-time"
+                            >1pm</span
+                          >
+                          <div class="clearfix"></div>
+                          <p class="truncate">
+                            Some technical error occurred needs to be resolved.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <hr class="light-grey-hr ma-0" />
+                    <div class="sl-item">
+                      <a href="javascript:void(0)">
+                        <div class="icon bg-blue">
+                          <i class="zmdi zmdi-email"></i>
+                        </div>
+                        <div class="sl-content">
+                          <span
+                            class="inline-block capitalize-font pull-left truncate head-notifications"
+                            >2 new messages</span
+                          >
+                          <span
+                            class="inline-block font-11 pull-right notifications-time"
+                            >9am</span
+                          >
+                          <div class="clearfix"></div>
+                          <p class="truncate">
+                            The numbers for your company's last months expenses
+                            are out. Check out your numbers.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <hr class="light-grey-hr ma-0" />
+                    <div class="sl-item">
+                      <a href="javascript:void(0)">
+                        <div class="icon bg-blue">
+                          <i class="zmdi zmdi-email"></i>
+                        </div>
+                        <div class="sl-content">
+                          <span
+                            class="inline-block capitalize-font pull-left truncate head-notifications"
+                            >New Annual Reports</span
+                          >
+                          <span
+                            class="inline-block font-11 pull-right notifications-time"
+                            >yesterday</span
+                          >
+                          <div class="clearfix"></div>
+                          <p class="truncate">
+                            You now have access to all companies of your
+                            "Biggest Car Companies" Project List.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <hr class="light-grey-hr ma-0" />
+                    <div class="sl-item">
+                      <a href="javascript:void(0)">
+                        <div class="icon bg-red">
+                          <i class="zmdi zmdi-storage"></i>
+                        </div>
+                        <div class="sl-content">
+                          <span
+                            class="inline-block capitalize-font pull-left truncate head-notifications txt-danger"
+                            >99% server space occupied.</span
+                          >
+                          <span
+                            class="inline-block font-11 pull-right notifications-time"
+                            >1pm</span
+                          >
+                          <div class="clearfix"></div>
+                          <p class="truncate">consectetur, adipisci velit.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="notification-box-bottom-wrap">
+                    <hr class="light-grey-hr ma-0" />
+                    <a
+                      class="block text-center read-all"
+                      href="javascript:void(0)"
+                    >
+                      read all
+                    </a>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown auth-drp">
+              <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"
+                ><img
+                  src="../img/user_pitt.png"
+                  alt="user_auth"
+                  class="user-auth-img img-circle" /><span
+                  class="user-online-status"
+                ></span
+              ></a>
+              <ul
+                class="dropdown-menu user-auth-dropdown"
+                data-dropdown-in="flipInX"
+                data-dropdown-out="flipOutX"
+              >
+                <li>
+                  <a href="#"
+                    ><i class="zmdi zmdi-account"></i><span>Profile</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="zmdi zmdi-card"></i><span>my balance</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="zmdi zmdi-email"></i><span>Inbox</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="zmdi zmdi-settings"></i><span>Settings</span></a
+                  >
+                </li>
+                <li class="divider"></li>
+                <li class="sub-menu show-on-hover">
+                  <a href="#" class="dropdown-toggle pr-0 level-2-drp"
+                    ><i class="zmdi zmdi-check text-success"></i> available</a
+                  >
+                  <ul class="dropdown-menu open-left-side">
+                    <li>
+                      <a href="#"
+                        ><i class="zmdi zmdi-check text-success"></i
+                        ><span>available</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="zmdi zmdi-circle-o text-warning"></i
+                        ><span>busy</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i
+                          class="zmdi zmdi-minus-circle-outline text-danger"
+                        ></i
+                        ><span>offline</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#"
+                    ><i class="zmdi zmdi-power"></i><span>Log Out</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /Top Menu Items -->
+
+      <!-- Left Sidebar Menu -->
+      <div class="fixed-sidebar-left">
+        <ul class="nav navbar-nav side-nav nicescroll-bar">
+          <li class="navigation-header">
+            <span>Navigations</span>
+            <i class="zmdi zmdi-more"></i>
+          </li>
+          <li>
+            <a href="dashboard.html"
+              ><div class="pull-left">
+                <i class="zmdi zmdi-flag mr-20"></i
+                ><span class="right-nav-text">Dashboard</span>
+              </div>
+              <div class="clearfix"></div
+            ></a>
+          </li>
+          <li>
+            <a class="active-page" href="reportShop.html"
+              ><div class="pull-left">
+                <i class="zmdi zmdi-apps mr-20"></i
+                ><span class="right-nav-text">Report Shop</span>
+              </div>
+              <div class="clearfix"></div
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- /Left Sidebar Menu -->
+
+      <!-- Main Content -->
+      <div class="page-wrapper">
+        <div class="container">
+          <!-- Title -->
+          <div class="row heading-bg">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+              <h5 class="txt-dark">Buy new Annual Reports here</h5>
+            </div>
+            <!-- Breadcrumb -->
+            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+              <ol class="breadcrumb">
+                <li class="active"><span>Report Shop</span></li>
+              </ol>
+            </div>
+            <!-- /Breadcrumb -->
+          </div>
+          <!-- /Title -->
+
+          <!-- Row -->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">List of Companies</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <div class="table-wrap">
+                      <div class="table-responsive">
+                        <table
+                          id="datable_1"
+                          class="table table-hover display pb-30"
+                        >
+                          <thead>
+                            <tr>
+                              <th>Company</th>
+                              <th>ISIN</th>
+                              <th>Publication Year</th>
+                              <th>Price</th>
+                              <th>Number of pages</th>
+                              <th>Action</th>
+                              <th>Package</th>
+                              <th>Available Label</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Allianz</th>
+                              <th>DE0008404005</th>
+                              <th>2019</th>
+                              <th>$45.99</th>
+                              <th>230</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Alphabet</th>
+                              <th>US02079K3059</th>
+                              <th>2019</th>
+                              <th>$48.99</th>
+                              <th>245</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in S&P 500 Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Amazon</th>
+                              <th>US0231351067</th>
+                              <th>2019</th>
+                              <th>$20.99</th>
+                              <th>102</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in S&P 500 Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>ASML Holding</th>
+                              <th>USN070592100</th>
+                              <th>2019</th>
+                              <th>$0</th>
+                              <th>223</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Add
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>TUI</th>
+                              <th>DE000TUAG000</th>
+                              <th>2019</th>
+                              <th>$31.99</th>
+                              <th>160</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Continental</th>
+                              <th>DE0005439004</th>
+                              <th>2019</th>
+                              <th>$51.99</th>
+                              <th>260</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>BMW</th>
+                              <th>DE0005190003</th>
+                              <th>2019</th>
+                              <th>$34.99</th>
+                              <th>175</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Lufthansa</th>
+                              <th>DE0008232125</th>
+                              <th>2019</th>
+                              <th>$0</th>
+                              <th>155</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Add
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Fujitsu</th>
+                              <th>JP3818000006</th>
+                              <th>2019</th>
+                              <th>$36.99</th>
+                              <th>185</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Siemens</th>
+                              <th>DE0007236101</th>
+                              <th>2019</th>
+                              <th>$0</th>
+                              <th>150</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Add
+                                </button>
+                              </th>
+                              <th>incl. in DAX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Lenovo</th>
+                              <th>HK0992009065</th>
+                              <th>2019</th>
+                              <th>$58.99</th>
+                              <th>295</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Tencent Holdings</th>
+                              <th>KYG875721634</th>
+                              <th>2019</th>
+                              <th>$54.99</th>
+                              <th>274</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Apple</th>
+                              <th>US0378331005</th>
+                              <th>2019</th>
+                              <th>$19.99</th>
+                              <th>100</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in S&P 500 Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Baidu.com</th>
+                              <th>US0567521085</th>
+                              <th>2019</th>
+                              <th>$67.99</th>
+                              <th>336</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Cloudflare Inc.</th>
+                              <th>US18915M1071</th>
+                              <th>2019</th>
+                              <th>$27.99</th>
+                              <th>137</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Futu Holdings</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Jumia Technology</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>MercadoLibre</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Nio Inc.</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>NVIDIA</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in S&P 500 Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Palantir Technologies</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Roku</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Snowflake</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Splunk</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Square</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Tesla</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in S&P 500 Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>The Trade Desk</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Twilio</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>2U Inc.</th>
+                              <th>US90214J1016</th>
+                              <th>2019</th>
+                              <th>$13.99</th>
+                              <th>70</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th></th>
+                              <th>Sales Figures</th>
+                            </tr>
+                            <tr>
+                              <th>Pacific Biosciences of California</th>
+                              <th>ISIN</th>
+                              <th>2019</th>
+                              <th>$XX.XX</th>
+                              <th>XXX</th>
+                              <th>
+                                <button
+                                  class="btn btn-rounded btn-sm"
+                                  onclick='window.location.href = "boughtAnnualReport.html"'
+                                  style="color: #ffffff; background: #0097cf"
+                                >
+                                  Buy
+                                </button>
+                              </th>
+                              <th>incl. in XXX Package</th>
+                              <th>Sales Figures</th>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th>Company</th>
+                              <th>ISIN</th>
+                              <th>Publication Year</th>
+                              <th>Price</th>
+                              <th>Number of pages</th>
+                              <th>Action</th>
+                              <th>Package</th>
+                              <th>Available Label</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Row -->
+
+          <!-- Row -->
+          <div class="row">
+            <div class="col-sm-6 ol-md-6 col-xs-12">
+              <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">
+                      Upload your own Annual Report
+                    </h6>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <p class="text-muted">
+                      You can either drag and drop your file here or press on
+                      the field to select a file on your device.
+                    </p>
+                    <div class="mt-40">
+                      <input
+                        type="file"
+                        id="input-file-max-fs"
+                        class="dropify"
+                        data-max-file-size="50M"
+                      />
+                    </div>
+                    <button
+                      class="btn btn-rounded btn-sm"
+                      onclick='window.location.href = "boughtAnnualReport.html"'
+                      style="
+                        color: #ffffff;
+                        background: #0097cf;
+                        margin-top: 10px;
+                      "
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="panel panel-default card-view">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">bar Chart</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <canvas id="chart_2" height="200"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Row -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer container-fluid pl-30 pr-30">
+          <div class="row">
+            <div class="col-sm-12" style="text-align: center">
+              <p>2020 &copy; Dara</p>
+            </div>
+          </div>
+        </footer>
+        <!-- /Footer -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- JavaScript -->
+
+    <!-- jQuery -->
+    <script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Daterangepicker JavaScript -->
+    <script src="../vendors/bower_components/dropify/dist/js/dropify.min.js"></script>
+
+    <!-- Form File Upload Data JavaScript -->
+    <script src="dist/js/form-file-upload-data.js"></script>
+
+    <!-- Data table JavaScript -->
+    <script src="../vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/bower_components/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/bower_components/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/bower_components/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/bower_components/pdfmake/build/vfs_fonts.js"></script>
+
+    <script src="../vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="dist/js/export-table-data.js"></script>
+    <script src="dist/js/dataTables-data.js"></script>
+
+    <!-- ChartJS JavaScript -->
+    <script src="../vendors/chart.js/Chart.min.js"></script>
+    <script src="dist/js/chartjs-data.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
+
+    <!-- Owl JavaScript -->
+    <script src="../vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Switchery JavaScript -->
+    <script src="../vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="dist/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+  </body>
+</html>

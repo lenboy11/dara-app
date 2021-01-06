@@ -1,0 +1,101 @@
+{% load static %}
+<html>
+    <body>
+        <!-- jQuery -->
+        <script src="{% static 'vendors/bower_components/jquery/dist/jquery.min.js' %}" ></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{% static 'vendors/bower_components/bootstrap/dist/js/bootstrap.min.js' %}" ></script>
+        
+        <!-- Data table JavaScript -->
+        <script src="{% static 'vendors/bower_components/datatables/media/js/jquery.dataTables.min.js' %}" ></script>
+        <script src="{% static 'dist/js/dataTables-data.js' %}" ></script>
+        
+        <!-- Slimscroll JavaScript -->
+        <script src="{% static 'dist/js/jquery.slimscroll.js' %}" ></script>
+        
+        <!-- Owl JavaScript -->
+        <script src="{% static 'vendors/bower_components/owl.carousel/dist/owl.carousel.min.js' %}" ></script>
+        
+        <!-- Switchery JavaScript -->
+        <script src="{% static 'vendors/bower_components/switchery/dist/switchery.min.js' %}" ></script>
+        
+        <!-- Fancy Dropdown JS -->
+        <script src="{% static 'dist/js/dropdown-bootstrap-extended.js' %}" ></script>
+        
+        <!-- Init JavaScript -->
+        <script src="{% static 'dist/js/init.js' %}" ></script>
+
+        <!-- Data table CSS -->
+	    <link href="{% static 'vendors/bower_components/datatables/media/css/jquery.dataTables.min.css' %}" rel="stylesheet" type="text/css"/>
+        
+        <!-- Custom CSS -->
+	    <link href="{% static 'dist/css/style.css' %}" rel="stylesheet" type="text/css">
+
+
+        <div class="panel-wrapper collapse in">
+            <div class="panel-body">
+                <div class="table-wrap">
+                    <div class="table-responsive">
+                        <table id="datable_1" class="table table-hover display  pb-30" >
+                            <thead>
+                                <tr>
+                                    <th>Report Title</th>
+                                    <th>Report Status</th>
+                                    <th>Number of pages</th>
+                                    <th>Last Update</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for report in reports_list %}
+                                    <tr>
+                                        <td> <a href = 'https://app.konfuzio.com{{ report.file_url }}'> {{ report.data_file_name }}</a> </td>
+                                        <td>{{ report.number_of_pages }}</td>
+                                        <td>{{ report.status}}</td>
+                                        <td> {{ report.updated_at}}</td>
+                                    </tr>
+                                {% endfor %}
+                                <!-- <tr>
+                                    <td>{{reports_list}}</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                </tr> -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Report Title</th>
+                                    <th>Report URL</th>
+                                    <th>Number of pages</th>
+                                </tr>
+                            </tfoot>
+                            
+                        </table>
+                    </div>
+                </div>	
+            </div>	
+        </div>	
+        <!-- <script>
+            $(document).ready(function () {
+                var username = "xpoda.info@gmail.com";
+                var password = "xhensila2501";
+                $.ajax({
+                    type: "GET",
+                    url: "https://app.konfuzio.com/api/projects/103/docs/",
+                    dataType: "json",
+                    data: { csrfmiddlewaretoken: '{{ csrf_token }}'}, // added csrf token.
+                    beforeSend: function (xhr){ 
+                        xhr.setRequestHeader('Authorization', 'Basic ' + username + ":" + password );
+                    },
+                    success: function (result, status, xhr) {
+                        console.log("RESULT",result)
+                    },
+                    error: function (xhr, status, error) {
+                        alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                });
+            })
+        </script> -->
+    </body>
+</html>
