@@ -6,12 +6,11 @@ from django.http import HttpResponse
 
 
 def index(request):
-#     url = "https://app.konfuzio.com/api/projects/103/docs/"
-#     auth = HTTPBasicAuth('xpoda.info@gmail.com','xhensila2501')
-#     response = requests.get(url=url, auth=auth).json()
-#     context = {'reports_list': response['results']}
-#     return render(request,'dashboard/dashboard.html',context)
-    return render(request,'dashboard/dashboard.html')
+    url = "https://app.konfuzio.com/api/projects/103/docs/"
+    auth = HTTPBasicAuth('xpoda.info@gmail.com','xhensila2501')
+    response = requests.get(url=url, auth=auth).json()
+    context = {'reports_list': response['results']}
+    return render(request,'dashboard/dashboard.html',context)
 
 
 def layout(request,document_id):
