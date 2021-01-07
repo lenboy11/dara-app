@@ -435,7 +435,8 @@
                                     <th>{{ report.number_of_pages }}</th>
                                     <th> {{ report.updated_at}}</th>
                                     <th>
-                                      <a class = "btn btn-sm btn-info" href = {% url 'layout' report.id %} >View</a>
+<!--                                       <a class = "btn btn-sm btn-info" href = {% url 'layout' report.id %} >View</a> -->
+                                      <a href="https://app.konfuzio.com/projects/103/docs/{{report.id}}/bbox-annotations"" target="_blank">View</a>
                                     </th>
                                 </tr>
                             {% endfor %}
