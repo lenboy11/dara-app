@@ -405,6 +405,7 @@
           <!-- Row -->
           <div class="row">
             <div class="col-sm-12">
+              {% csrf_token %}
               <iframe
                 title="Amazon 2019 Annual Report"
                 src="https://app.konfuzio.com/projects/103/docs/{{document_id}}/bbox-annotations"
